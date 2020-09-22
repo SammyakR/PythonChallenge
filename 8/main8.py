@@ -1,0 +1,13 @@
+import bz2
+
+strn = 'BZh91AY&SYA\xaf\x82\r\x00\x00\x01\x01\x80\x02\xc0\x02\x00 \x00!\x9ah3M\x07<]\xc9\x14\xe1BA\x06\xbe\x084'
+#byt = strn.encode('utf-8')
+
+byte = bytes(strn, 'utf-8')
+
+print(bz2.decompress('BZh91AY&SYA\xaf\x82\r\x00\x00\x01\x01\x80\x02\xc0\x02\x00 \x00!\x9ah3M\x07<]\xc9\x14\xe1BA\x06\xbe\x084'))
+
+"""for bit in byte:
+	print(bz2.decompress(bit), end='')
+"""
+
